@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sc_category">
+    <sc_category action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Request for a Reimbursement</description>
+        <entitlement_script/>
+        <header_icon/>
+        <homepage_image/>
+        <homepage_renderer display_value="">Default</homepage_renderer>
+        <icon/>
+        <image/>
+        <location/>
+        <mobile_hide_description>false</mobile_hide_description>
+        <mobile_picture/>
+        <mobile_subcategory_render_type>list</mobile_subcategory_render_type>
+        <module/>
+        <order>0</order>
+        <parent/>
+        <roles/>
+        <sc_catalog display_value="Tuition Reimbursement Catalog">08b76b27db7132000dbcddd0cf9619d6</sc_catalog>
+        <show_in_cms>false</show_in_cms>
+        <sys_class_name>sc_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-04-04 20:22:10</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>6c70f72bdb7132000dbcddd0cf961906</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Reimbursement Request</sys_name>
+        <sys_package display_value="Tuition Reimbursement" source="x_94722_tuition_re">9e546363db7132000dbcddd0cf961970</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Tuition Reimbursement">9e546363db7132000dbcddd0cf961970</sys_scope>
+        <sys_update_name>sc_category_6c70f72bdb7132000dbcddd0cf961906</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-04-04 20:22:48</sys_updated_on>
+        <title>Reimbursement Request</title>
+    </sc_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=6c70f72bdb7132000dbcddd0cf961906"/>
+</record_update>

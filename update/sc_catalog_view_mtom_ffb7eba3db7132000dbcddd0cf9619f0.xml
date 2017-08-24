@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sc_catalog_view_mtom">
+    <sc_catalog_view_mtom action="INSERT_OR_UPDATE">
+        <default>true</default>
+        <sc_catalog display_value="Tuition Reimbursement Catalog">08b76b27db7132000dbcddd0cf9619d6</sc_catalog>
+        <sys_class_name>sc_catalog_view_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-04-04 19:43:49</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ffb7eba3db7132000dbcddd0cf9619f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Tuition Reimbursement Catalog.catalog_tuition_reimbursement_catalog</sys_name>
+        <sys_package display_value="Tuition Reimbursement" source="x_94722_tuition_re">9e546363db7132000dbcddd0cf961970</sys_package>
+        <sys_policy/>
+        <sys_portal_page display_value="catalog_tuition_reimbursement_catalog">73b7eba3db7132000dbcddd0cf9619f0</sys_portal_page>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Tuition Reimbursement">9e546363db7132000dbcddd0cf961970</sys_scope>
+        <sys_update_name>sc_catalog_view_mtom_ffb7eba3db7132000dbcddd0cf9619f0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-04-04 19:43:49</sys_updated_on>
+    </sc_catalog_view_mtom>
+</record_update>

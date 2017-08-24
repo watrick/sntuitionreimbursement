@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="Tuition Reimbursement" max_length="40" name="x_94722_tuition_re_tuition_reimbursement" sizeclass="7" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Annual Rollup" max_length="40" name="annual_rollup" type="string"/>
+        <element attributes="omit_sys_original=true" label="Books/Fees/Others" max_length="20" name="books_fees_others" type="string"/>
+        <element label="Clawback Acknowledgement" max_length="40" name="clawback_acknowledgement" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Course Name" max_length="40" name="course_name" type="string"/>
+        <element label="Date Requested" max_length="40" name="date_requested" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Degree" max_length="40" name="degree" type="string">
+            <choice>
+                <element label="Associates" sequence="0" value="Associates"/>
+                <element label="Bachelors" sequence="1" value="Bachelors"/>
+                <element label="Graduate" sequence="2" value="Graduate"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Field of Study" max_length="40" name="field_of_study" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="First" max_length="40" name="first" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Grade" max_length="40" name="grade" type="string">
+            <choice>
+                <element label="A" sequence="0" value="A"/>
+                <element label="B" sequence="1" value="B"/>
+                <element label="C" sequence="2" value="C"/>
+                <element label="D" sequence="3" value="D"/>
+                <element label="F" sequence="4" value="F"/>
+                <element label="Pass" sequence="5" value="Pass"/>
+                <element label="Fail" sequence="6" value="Fail"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Last" max_length="40" name="last" type="string"/>
+        <element label="Manager" max_length="32" name="manager" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Reimbursement" max_length="40" name="reimbursement" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Reimbursement Earned" max_length="40" name="reimbursement_earned" type="string"/>
+        <element label="Requestor" max_length="32" name="requestor" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Requestor's Email" max_length="40" name="requestor_s_email" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="School Name" max_length="40" name="school_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Total Cost" max_length="40" name="total_cost" type="string"/>
+        <element attributes="omit_sys_original=true" label="Tuition Cost" max_length="20" name="tuition_cost" type="string"/>
+        <element label="Tuition Reimbursement" max_length="40" name="tuition_reimbursement" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Type" max_length="40" name="type" type="string">
+            <choice>
+                <element label="Tuition Reimbursement Approval" sequence="0" value="Tuition Reimbursement Approval"/>
+                <element label="Tuition Reimbursement Payment" sequence="1" value="Tuition Reimbursement Payment"/>
+            </choice>
+        </element>
+    </element>
+</database>

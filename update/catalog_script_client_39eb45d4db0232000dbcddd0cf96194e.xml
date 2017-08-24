@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Request Tuition Reimbursement">e8f20873dbb132000dbcddd0cf9619bd</cat_item>
+        <cat_variable>IO:a9f4c08cdb0a32000dbcddd0cf96199f</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <messages/>
+        <name>Total Cost Validate/Calculate</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+   if (isLoading || newValue == '') {
+      return;
+   }
+	var updatedValue = newValue.replace(/[^0-9.]/g, '');
+	var totInt = parseInt(updatedValue);
+    newValue = '$'+parseFloat(updatedValue).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+	
+	if(totInt > 6000) {
+		g_form.setValue('reimbursement', 6000);
+	} else {
+		g_form.setValue('reimbursement', newValue);
+	}
+   
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-04-06 16:18:45</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>39eb45d4db0232000dbcddd0cf96194e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Total Cost Validate/Calculate</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Tuition Reimbursement" source="x_94722_tuition_re">9e546363db7132000dbcddd0cf961970</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Tuition Reimbursement">9e546363db7132000dbcddd0cf961970</sys_scope>
+        <sys_update_name>catalog_script_client_39eb45d4db0232000dbcddd0cf96194e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-07-20 19:56:42</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+</record_update>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_process_flow">
+    <sys_process_flow action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_94722_tuition_re_tuition_reimbursement">state=4^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="4"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <label>Payment Processing</label>
+        <name>TR Payment Processing</name>
+        <order>400</order>
+        <sys_class_name>sys_process_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-04-06 20:56:00</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>c23b0654db8232000dbcddd0cf9619dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TR Payment Processing</sys_name>
+        <sys_package display_value="Tuition Reimbursement" source="x_94722_tuition_re">9e546363db7132000dbcddd0cf961970</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Tuition Reimbursement">9e546363db7132000dbcddd0cf961970</sys_scope>
+        <sys_update_name>sys_process_flow_c23b0654db8232000dbcddd0cf9619dc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-04-06 20:56:00</sys_updated_on>
+        <table>x_94722_tuition_re_tuition_reimbursement</table>
+    </sys_process_flow>
+</record_update>

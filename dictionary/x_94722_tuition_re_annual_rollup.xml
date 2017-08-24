@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Annual Rollup" max_length="40" name="x_94722_tuition_re_annual_rollup" type="collection">
+        <element label="Approved Cost" max_length="20" name="approved_cost" type="currency"/>
+        <element display="true" label="Balance Remaining" max_length="20" name="balance_remaining" type="currency"/>
+        <element label="Calendar Year" max_length="32" name="calendar_year" reference="x_94722_tuition_re_annual_cost_cap" type="reference"/>
+        <element label="Employee" max_length="32" name="employee" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="calendar_year"/>
+        </index>
+        <index name="index2">
+            <element name="employee"/>
+        </index>
+    </element>
+</database>
